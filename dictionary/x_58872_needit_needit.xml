@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="d5acba810721311065a2fa4d7c1ed050" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="encode_utf8=false" label="Requested For" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Account Department" sequence="0" value="account department"/>
+                <element inactive="true" inactive_on_update="true" label="Accounts" sequence="0" value="accounts"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive="true" inactive_on_update="true" label="Developers" sequence="0" value="developers"/>
+                <element inactive_on_update="false" label="Human resources" sequence="0" value="hr"/>
+                <element inactive="true" inactive_on_update="true" label="Research and Developement" sequence="0" value="research and developement"/>
+                <element inactive="true" inactive_on_update="true" label="Your Departement Choice" sequence="0" value="your_departement_choice"/>
+                <element inactive="true" inactive_on_update="true" label="Your Department Choice" sequence="0" value="your department choice"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Facilites" sequence="1" value="facilites"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Legal" sequence="2" value="legal"/>
+                <element inactive_on_update="false" label="Exploitation Direction" sequence="3" value="exploitation direction"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal 1" label="What Needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Account Department 1" sequence="0" value="Account Department  1"/>
+                <element inactive="true" inactive_on_update="true" label="Accounts 1" sequence="0" value="accounts 1"/>
+                <element inactive_on_update="false" label="Human resources 1" sequence="0" value="human resources 1"/>
+                <element inactive="true" inactive_on_update="true" label="Research Developement 1" sequence="0" value="Research Developement  1"/>
+                <element inactive="true" inactive_on_update="true" label="Support It 1" sequence="0" value="Support It 1"/>
+                <element inactive="true" inactive_on_update="true" label="Your Departement Choice 1" sequence="0" value="your departement choice 1"/>
+                <element inactive="true" inactive_on_update="true" label="Account Department  2" sequence="1" value="Account Department  2"/>
+                <element inactive="true" inactive_on_update="true" label="Accounts 2" sequence="1" value="accounts 2"/>
+                <element inactive_on_update="false" label="Human resources 2" sequence="1" value="human resources 2"/>
+                <element inactive="true" inactive_on_update="true" label="Research Developement  2" sequence="1" value="Research Developement  2"/>
+                <element inactive="true" inactive_on_update="true" label="Support It 2" sequence="1" value="Support It 2"/>
+                <element inactive="true" inactive_on_update="true" label="Your Departement Choice 2" sequence="1" value="your departement choice 2"/>
+                <element inactive_on_update="false" label="Facilites 1" sequence="2" value="facilites 1"/>
+                <element inactive_on_update="false" label="Facilites 2" sequence="3" value="facilites 2"/>
+                <element inactive_on_update="false" label="Legal 1" sequence="4" value="legal 1"/>
+                <element inactive_on_update="false" label="Legal 2" sequence="5" value="legal 2"/>
+                <element inactive_on_update="false" label="Exploitation Direction 1" sequence="6" value="exploitation direction 1"/>
+                <element inactive_on_update="false" label="Exploitation Direction 2" sequence="7" value="exploitation direction 2"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="When Needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
